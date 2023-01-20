@@ -1,6 +1,16 @@
 package dmit2015.model;
 
+/**
+* This class model a Circle shape
+*
+* @author phamnghi
+* @version 2023.01.20
+* */
+
 public class Circle {
+    /**
+     * The radius of this circle
+     * */
     private double radius;
 
     public double getRadius() {
@@ -24,6 +34,7 @@ public class Circle {
     }
 
     public Circle() {
+        // radius = 1;
         setRadius(1);
     }
 
@@ -32,12 +43,28 @@ public class Circle {
         setRadius(radius);
     }
 
-    public double Area()
+    /**
+     * Compute and return the area of this circle
+     * @return area of this circle
+     */
+    public double area()
     {
         return Math.PI *radius * radius;
     }
 
-    public double Perimeter(){
+    /**
+     * Compute and return the area of this circle
+     * @return diameter of this circle
+     */
+    public double diameter(){
+        return 2 * radius;
+    }
+
+    /**
+     * Compute and return the area of this circle
+     * @return circumference of this circle
+     */
+    public double circumference(){
         return 2 * Math.PI * radius;
     }
 
@@ -49,8 +76,8 @@ public class Circle {
         // area should be 3.14159
         // perimeter should be 6.28
         System.out.printf("The radius of circle1 is %s\n", circle1.getRadius());
-        System.out.printf("The area of circle1 is %.5f\n", circle1.Area());
-        System.out.printf("The perimeter of circle1 is %.2f\n", circle1.Perimeter());
+        System.out.printf("The area of circle1 is %.5f\n", circle1.area());
+        System.out.printf("The perimeter of circle1 is %.2f\n", circle1.diameter());
 
         // Change the radius of circle1 to 5
         circle1.setRadius(5);
@@ -58,8 +85,8 @@ public class Circle {
         // area should be 78.53982
         // perimeter should be 31.41593
         System.out.printf("The radius of circle1 is %s\n", circle1.getRadius());
-        System.out.printf("The area of circle1 is %.5f\n", circle1.Area());
-        System.out.printf("The perimeter of circle1 is %.2f\n", circle1.Perimeter());
+        System.out.printf("The area of circle1 is %.5f\n", circle1.area());
+        System.out.printf("The perimeter of circle1 is %.2f\n", circle1.diameter());
 
         // Change the radius of cirlce1 to -25
         // It should throw an exception
