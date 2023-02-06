@@ -2,7 +2,7 @@ package dmit2015.model;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RectangleTest {
 
@@ -29,14 +29,13 @@ class RectangleTest {
     }
 
     @Test
-    void diagonal_ValidValues_shouldPass()
-    {
+    void diagonal_ValidValues_shouldPass() {
         // Arrange
         Rectangle currentRectangle = new Rectangle();
         // Act
         currentRectangle.setLength(40);
         currentRectangle.setWidth(35);
         // Assert
-        assertEquals(53.15, currentRectangle.diagonal(),0.005);
+        assertEquals(53.15, currentRectangle.diagonal(), 0.005);
     }
 }

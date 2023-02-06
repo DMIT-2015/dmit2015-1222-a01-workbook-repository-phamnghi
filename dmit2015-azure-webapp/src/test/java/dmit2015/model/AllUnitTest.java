@@ -1,4 +1,13 @@
 package dmit2015.model;
 
-public class AllUnitTest {
+import org.junit.platform.suite.api.*;
+@Suite
+@SuiteDisplayName("JUnit 5 Platform Suite")
+@SelectPackages("dmit2015.model")
+@IncludeClassNamePatterns(".*Test")
+//@SelectClasses({CircleTest.class, RectangleTest.class})
+public class AllUnitTest
+{
+// the class remains completely empty,
+// being used only as a holder for the above annotations
 }

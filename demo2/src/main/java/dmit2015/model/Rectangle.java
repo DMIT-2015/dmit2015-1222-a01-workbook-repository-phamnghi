@@ -22,7 +22,7 @@ public class Rectangle {
 
     public Rectangle() {
     }
-
+    // constructor
     public Rectangle(double theLength, double width) {
         this.theLength = theLength;
         this.width = width;
