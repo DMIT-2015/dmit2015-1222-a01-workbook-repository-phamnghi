@@ -1,0 +1,2 @@
+### Make an API call to get the weather by city for Edmonton. Replace yourAppKey with your own API key
+https://api.openweathermap.org/data/2.5/weather?q=Edmonton&appid=87577f16d805ab63f3852b922baae8d3
