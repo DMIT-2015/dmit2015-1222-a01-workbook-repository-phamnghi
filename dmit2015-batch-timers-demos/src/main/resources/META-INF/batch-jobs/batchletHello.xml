@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id="batchletHello"
+     xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+     version="1.0">
+
+    <properties>
+    	<property name="username" value="Uncle Ben" />
+    </properties>
+
+
+    <step id="step1">
+        <batchlet ref="helloBatchlet">
+            <properties>
+                <property name="course_name" value="DMIT2015" />
+            </properties>
+        </batchlet>
+    </step>
+
+</job>

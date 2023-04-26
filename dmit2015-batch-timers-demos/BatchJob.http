@@ -1,0 +1,11 @@
+###
+POST http://localhost:8080/restapi/batch-jobs/batchletHello
+
+###
+GET http://localhost:8080/restapi/batch-jobs/4
+
+###
+POST http://localhost:8080/restapi/batch-jobs/chunkEnforcementZoneCentre
+
+###
+POST http://localhost:8080/restapi/batch-jobs/chunkEnforcementZoneCentreImportToDatabase
